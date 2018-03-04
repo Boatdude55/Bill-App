@@ -1,0 +1,34 @@
+<!--Hello World! From NavbarComponent-->
+<!--<div class="navbar-container">
+  
+  <nav class="navbar navbar-expand-lg navbar-inverse bg-primary">
+    
+    <a href="/" class="navbar-brand">
+      <img src="./assets/congress-gov-logo.svg" width="200" height="100" alt="U.S. Congress Logo">
+    </a>
+    
+    <div class="collapse navbar-collapse">
+      
+      <ul class="navbar-nav">
+        <li class="nav-item" *ngFor="let view of menu">
+            <a class="nav-link" id="{{view.state}}">{{view.title}}</a>
+        </li>
+      </ul>
+      
+    </div>
+    
+  </nav>
+  
+</div>-->
+<a href="/" class="navbar-brand">
+  <img src="./assets/congress-gov-logo.svg" width="200" height="100" alt="U.S. Congress Logo">
+</a>
+
+<ul class="navbar-nav">
+  <li class="nav-item btn-outline-primary bg-light" *ngFor="let view of menu">
+
+      <a routerLink="/{{view.path}}" routerLinkActive="active" class="nav-link" id="{{view.state}}">{{view.title}}</a>
+
+  </li>
+
+</ul>

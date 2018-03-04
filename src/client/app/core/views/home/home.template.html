@@ -1,0 +1,21 @@
+<div class="bg-warning">
+    <h3>HOME</h3>
+    <div>
+        <span *ngFor="let frame of frames"
+            [@frameState]="frame.state"
+            (click)="frame.toggleState()"
+            class="m-3 p-2 rounded btn-outline-light bg-warning">
+          {{frame.text}}
+        </span>
+    </div>
+    <button class="btn btn-outline-light">Get Started</button>
+</div>
+<!--<div [@frameState]="frame.state" id="frame-2">
+    <h1>Congress</h1>
+    <div class="sub-frame">Bills and Resolutions</div>
+    <div class="sub-frame">Introduction and Referall</div>
+    <div class="sub-frame">In Committe</div>
+    <div class="sub-frame">House Floor</div>
+    <div class="sub-frame">Senate</div><div class="sub-frame">House Floor</div>
+</div>
+-->

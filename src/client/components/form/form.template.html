@@ -1,0 +1,11 @@
+<div class="form-container float-right">
+  <!--Hello World! From FormComponent-->
+    <form  #searchForm='ngForm' (ngSubmit)="onSubmit()" class="form-inline my-2 my-lg-0">
+        <input [(ngModel)]="model.query" name="query" #query="ngModel" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <!--<div><span>Query: {{ model.query }}</span></div>-->
+        <!--<div><span>GET/POST: {{ model.contents }}</span></div>-->
+      <button class="btn btn-outline-primary my-2 my-sm-0 text-dark" type="submit">Search</button>
+      
+    </form>
+      
+</div>

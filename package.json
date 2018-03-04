@@ -1,10 +1,10 @@
 {
-  "name": "ref-app",
+  "name": "bill-app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --disableHostCheck --host 0.0.0.0 --port 8080",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -17,7 +17,6 @@
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
     "@angular/forms": "^5.2.0",
-    "@angular/http": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
